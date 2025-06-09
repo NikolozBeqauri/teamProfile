@@ -1,1 +1,31 @@
 @use '../../_colors.scss' as *;
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+    max-width: 1560px;
+    width: 100%;
+    padding: 200px 16px 350px 16px;
+    margin: 0 auto;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.texts h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52px;
+}
+
+.texts p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    max-width: 750px;
+    width: 100%;
+}
