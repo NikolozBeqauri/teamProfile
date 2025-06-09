@@ -1,6 +1,7 @@
 import Hero from '../components/Hero/Hero';
 import HowWeWork from '../components/HowWeWork/HowWeWork';
 import NavigationRender from '../components/NavigationRender/NavigationRender';
+import OurPartners from '../components/OurPartners/OurPartners';
 import ServiceSection from '../components/ServiceSection/ServiceSection';
 
 
@@ -10,6 +11,7 @@ export default function HomePage() {
       <NavigationRender />
       <Hero/>
       <ServiceSection/>
+      <OurPartners/>
       <HowWeWork/>
     </div>
   );

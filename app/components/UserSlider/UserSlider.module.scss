@@ -1,0 +1,36 @@
+@use '../../_colors.scss' as *;
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.gradientLeft,
+.gradientRight {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 80px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.gradientLeft {
+  left: 0;
+  background: linear-gradient(to right, $primaryDark, transparent);
+  z-index: 2;
+}
+
+.gradientRight {
+  right: 0;
+  background: linear-gradient(to left, $primaryDark, transparent);
+    z-index: 2;
+
+}
+
+.image {
+  height: 100px;
+  width: auto;
+  margin: 0 60px;
+  z-index: 0;
+}

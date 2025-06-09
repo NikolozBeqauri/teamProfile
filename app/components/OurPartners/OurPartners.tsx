@@ -1,9 +1,10 @@
 import React from 'react'
-
+import UserSlider from '../UserSlider/UserSlider'
+import styles from './OurPartners.module.scss'
 const OurPartners = () => {
     return (
-        <div>
-            <div>
+        <div className={styles.wrapper}>
+            <div className={styles.texts}>
                 <h2>Our partners</h2>
                 <p>
                     Our team consists of highly qualified specialists with international
@@ -12,6 +13,7 @@ const OurPartners = () => {
                     affordable prices and are always focused on the success of our clients.
                 </p>
             </div>
+            <UserSlider />
         </div>
     )
 }
