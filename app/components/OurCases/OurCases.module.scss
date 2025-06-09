@@ -1,0 +1,157 @@
+@use '../../_colors.scss' as *;
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    max-width: 1560px;
+    width: 100%;
+    padding: 340px 16px 124px 16px;
+    margin: 0 auto;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.texts h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52px;
+}
+
+.texts p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    max-width: 670px;
+    width: 100%;
+}
+
+.casesWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px
+}
+
+.avseApp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-image: url('/avseAppBackGround.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    max-width: 460px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 24px;
+    padding: 0px 12px;
+    gap: 76px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: $serviceBlue;
+        opacity: 0.85;
+        z-index: 1;
+    }
+
+    >* {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.secondaryTexts h3 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 24px;
+    text-align: center;
+
+}
+
+.secondaryTexts p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+}
+
+.secondSectionWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.avseLanding,
+.pilzWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 24px 16px 24px 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 24px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: $serviceBlue;
+        opacity: 0.85;
+        z-index: 1;
+    }
+
+    >* {
+        position: relative;
+        z-index: 2;
+    }
+}
+.avseLanding {
+    background-image: url('/avseLandingBackGround.png');
+}
+
+.pilzWrapper {
+    background-image: url('/pilzLandingBackGround.png');
+}
+
+//animation
+.avseApp,
+.avseLanding,
+.pilzWrapper {
+  transition: transform 0.5s ease;
+
+  &:hover {
+    transform: translateY(-4px); 
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      120deg,
+      transparent 0%,
+      rgba($primaryBlue, 0.2) 50%,
+      transparent 100%
+    );
+    opacity: 0;
+    z-index: 3;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+}
+//animation end
