@@ -1,0 +1,14 @@
+.navigation {
+    display: flex;
+}
+.burgerNav {
+    display: none;
+}
+@media (max-width: 768px) {
+    .burgerNav {
+        display: flex;
+    }
+    .navigation {
+        display: none;
+    }
+}

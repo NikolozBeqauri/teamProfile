@@ -1,0 +1,173 @@
+@use '../../../_colors.scss' as *;
+
+.container {
+    max-width: 1945px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1472px;
+    padding: 120px 40px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.header {
+    height: 430px;
+    background-image: url('/serviceHeader.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 56px;
+    line-height: 40px;
+    font-weight: 500;
+    color: $white;
+}
+
+.body h2 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.body p {
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 500;
+    color: $primaryDark;
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.listContainer h3 {
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 500;
+    color: $primaryDark;
+}
+
+.listContainer ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+    row-gap: 12px;
+}
+
+.listContainer ul li {
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 500;
+    color: $primaryDark;
+}
+
+.contentParagraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.listItem {
+    display: inline-flex;
+    align-items: start;
+    gap: 8px;
+    background: rgba(21, 81, 107, 0.1);
+    border-radius: 12px;
+    padding: 12px 10px;
+    width: 100%;
+}
+
+.listItem>img {
+    margin-top: 8px;
+}
+
+.calculatorImage {
+    max-width: 1472px;
+    width: 100%;
+    padding: 0px 40px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 1100px) {
+    .listContainer ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 12px;
+    }
+}
+@media (max-width: 1100px) {
+    .header {
+        height: 300px;
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 900px) {
+    .content {
+        padding: 40px;
+    }
+
+    .header {
+        height: 250px;
+        margin-top: 80px;
+    }
+
+    .header h1 {
+        font-size: 32px;
+    }
+
+    .body h2 {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    .body p {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 560px) {
+    .content {
+        padding: 16px;
+    }
+
+    .header {
+        height: 140px;
+    }
+
+    .header h1 {
+        font-size: 18px;
+    }
+
+    .body h2 {
+        font-size: 18px;
+    }
+
+    .body p {
+        font-size: 14px;
+    }
+
+    .contentParagraphs {
+        gap: 32px;
+    }
+
+    .calculatorImage {
+        padding: 0px 16px;
+    }
+}

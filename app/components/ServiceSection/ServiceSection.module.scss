@@ -1,0 +1,62 @@
+@use '../../_colors.scss' as *;
+
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    max-width: 1560px;
+    width: 100%;
+    padding: 0px 16px;
+    margin: 0 auto;
+    height: 710px;
+}
+
+.serviceNavigation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 80px;
+}
+
+.serviceNavigation h2 {
+    font-size: 48px;
+    font-weight: 500;
+    margin-top: 100px;
+}
+
+.serviceNavigation>div {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.defaultP {
+    cursor: pointer;
+    font-size: 24px;
+    color: rgb(177, 177, 177);
+    transition: all 0.8s ease;
+}
+
+.activeP {
+    cursor: pointer;
+    font-size: 24px;
+    color: $white;
+    transform: translateX(60px);
+    transition: all 0.8s ease;
+}
+
+.serviceNavigationItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-end;
+    margin-bottom: 56px;
+    gap: 60px;
+}
+
+.serviceNavigationItem p {
+    max-width: 640px;
+    width: 100%;
+    text-align: center;
+}

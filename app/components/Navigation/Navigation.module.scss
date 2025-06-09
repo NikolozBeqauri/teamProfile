@@ -1,0 +1,79 @@
+@use '../../_colors.scss' as *;
+@use 'sass:color';
+
+.container {
+  position: relative;
+  z-index: 4;
+  background: $primaryDark;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 16px;
+  gap: 64px;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, transparent, $white, transparent);
+    pointer-events: none; 
+  }
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.content nav {
+display: flex;
+}
+
+.content nav ul {
+    display: flex;
+    gap: 56px;
+
+}
+
+
+.content nav ul li > a {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  color: $white;
+  text-decoration: none;
+    
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, $white, color.adjust($white, $lightness: 20%));
+    transition: width 0.4s ease, left 0.4s ease;
+    transform: translateX(-50%);
+  }
+
+  &:hover::after {
+    width: 100%;
+    left: 50%;
+  }
+}
+
+
+
+
+.buttonWrapper {
+    max-width: 176px;
+    width: 100%
+}

@@ -1,0 +1,60 @@
+@use '../../_colors.scss' as *;
+.wrapper {
+  max-width: 1560px;
+  width: 100%;
+  padding: 0px 16px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.stepsWrapper {
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 140px;
+  column-gap: 28px;
+}
+
+.stepCard {
+  max-width: 340px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 12px;
+}
+
+.stepNumber {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 48px;
+  color: $primaryGray;
+}
+
+.stepTitle {
+  align-self: flex-start;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.stepDescription {
+  font-size: 16px;
+  line-height: 28px;
+}

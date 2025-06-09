@@ -1,0 +1,36 @@
+@use '../../_colors.scss' as *;
+
+.wrapper {
+    max-width: 1560px;
+    width: 100%;
+    margin-top: 98px;
+    padding: 100px 16px 0px 16px;
+    margin: 0 auto;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 160px;
+}
+.title {
+    position: relative;
+    z-index: 2;
+}
+.heroImage {
+    position: absolute;
+    top: -200;
+    left: -200;
+    z-index: -1;
+}
+.title h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 82px;
+}
+.socialWrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    z-index: 2;
+}
