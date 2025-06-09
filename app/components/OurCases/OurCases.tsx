@@ -5,12 +5,12 @@ const OurCases = () => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.texts}>
-                {/* <Image
+                <Image
                 src={'/fire.svg'}
                 alt='fire Icon'
-                height={191}
-                width={191}
-            /> */}
+                height={117}
+                width={70}
+            />
                 <h2>Our cases</h2>
                 <p>Our team consists of highly qualified specialists with international experience in the field of Web development, mobile development,</p>
             </div>
