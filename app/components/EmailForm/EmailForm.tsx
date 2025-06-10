@@ -7,17 +7,24 @@ import ReusableButton from '../ReusableButton/ReusableButton';
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 
+interface EmailFormInputs {
+    subject: string;
+    email: string;
+    phone: string;
+    message: string;
+}
+
 const EmailForm = () => {
     const t = useTranslations('EmailForm');
     const {
         register,
         handleSubmit,
         formState: { errors },
-    } = useForm();
+    } = useForm<EmailFormInputs>();
 
     const [messageFilled, setMessageFilled] = useState(false);
 
-    const onSubmit = (data: any) => {
+    const onSubmit = (data: EmailFormInputs) => {
         console.log(data);
     };
 
