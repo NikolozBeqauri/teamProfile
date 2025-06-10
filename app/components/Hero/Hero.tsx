@@ -10,7 +10,7 @@ const Hero = () => {
             name: 'email',
             href: '#',
             defaultSrc: '/whiteEmail.svg',
-            alt: 'Facebook icon',
+            alt: 'email icon',
         },
         {
             name: 'twitter',
@@ -22,7 +22,7 @@ const Hero = () => {
             name: 'linkedin',
             href: '#',
             defaultSrc: '/linkedin.svg',
-            alt: 'Instagram icon',
+            alt: 'linkedin icon',
         },
     ];
 

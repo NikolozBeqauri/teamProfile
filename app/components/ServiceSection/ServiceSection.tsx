@@ -3,36 +3,36 @@ import { useState } from 'react';
 import styles from './ServiceSection.module.scss';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-
-const services = [
-  {
-    name: 'Web development',
-    image: '/serviceWeb.png',
-    description:
-      'Our team consists of highly qualified specialists with international experience in the field of Web development, mobile development, Product management and design. We provide premium service at affordable prices and are always focused on the success of our clients.',
-  },
-  {
-    name: 'Mobile development',
-    image: '/serviceWeb.png',
-    description:
-      'We build high-performance mobile applications for iOS and Android using native and cross-platform technologies to suit your business needs.',
-  },
-  {
-    name: 'UX/UI design',
-    image: '/serviceWeb.png',
-    description:
-      'Our designers create user-centered interfaces that are both visually appealing and highly functional, focusing on seamless user experiences.',
-  },
-];
+import { useTranslations } from "next-intl";
 
 const ServiceSection = () => {
+  const t = useTranslations('OurService');
+
+  const services = [
+    {
+      name: t('web'),
+      image: '/serviceWeb.png',
+      description: t('webDescription'),
+    },
+    {
+      name: t('mobile'),
+      image: '/serviceWeb.png',
+      description: t('mobileDescription'),
+    },
+    {
+      name: t('ui'),
+      image: '/serviceWeb.png',
+      description: t('uiDescription'),
+    },
+  ];
+
   const [selectedIndex, setSelectedIndex] = useState(0);
   const selectedService = services[selectedIndex];
 
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id='services'>
       <div className={styles.serviceNavigation}>
-        <h2>Our services</h2>
+        <h2>{t('title')}</h2>
         <div>
           {services.map((service, index) => (
             <p
@@ -55,7 +55,7 @@ const ServiceSection = () => {
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: 100, opacity: 0 }}
-            transition={{ duration: .6 }}
+            transition={{ duration: 0.6 }}
           >
             <Image
               src={selectedService.image}
@@ -72,7 +72,7 @@ const ServiceSection = () => {
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: -100, opacity: 0 }}
-            transition={{ duration: .6 }}
+            transition={{ duration: 0.6 }}
           >
             {selectedService.description}
           </motion.p>

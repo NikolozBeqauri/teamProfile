@@ -4,5 +4,126 @@
     "services": "Services",
     "aboutUs": "About Us",
     "contact": "Contact"
+  },
+  "OurService": {
+    "title": "Our services",
+    "web": "Web development",
+    "mobile": "Mobile development",
+    "ui": "UX/UI design",
+    "webDescription": "Your website will be fully adapted to both your business needs and user comfort, ensuring easy and efficient information retrieval.",
+    "mobileDescription": "We specialize in creating mobile applications for iOS and Android platforms — with user-friendly designs.",
+    "uiDescription": "If your website design does not meet modern standards and you want to develop it, then you have come to the right place!"
+  },
+  "OurPartners": {
+    "title": "Our partners",
+    "description": "We're honored to collaborate with forward-thinking companies across diverse industries. Their trust drives our commitment to delivering exceptional digital solutions."
+  },
+  "HowWeWork": {
+    "titlePart1": "How we",
+    "titlePart2": "work",
+    "steps": [
+      {
+        "title": "Briefing",
+        "description": "We gather key information about your goals, audience, and project requirements to ensure a clear understanding before we begin the creative process."
+      },
+      {
+        "title": "Branding",
+        "description": "We define your brand identity, including style, tone, and visual elements that will guide the design."
+      },
+      {
+        "title": "Design",
+        "description": "Our designers craft intuitive and visually appealing interfaces tailored to your audience and brand identity."
+      },
+      {
+        "title": "Development",
+        "description": "Our development team brings the designs to life using modern technologies, ensuring performance, scalability, and reliability."
+      },
+      {
+        "title": "Testing",
+        "description": "Our designers craft intuitive and visually appealing interfaces tailored to your audience and brand identity."
+      },
+      {
+        "title": "Publish",
+        "description": "We launch the final product, ensuring everything works smoothly and providing post-launch support for any necessary adjustments."
+      }
+    ]
+  },
+  "OurCases": {
+    "title": "Our cases",
+    "description": "Our team consists of highly qualified specialists with international experience in the field of Web development, mobile development.",
+    "cases": [
+      {
+        "title": "Avse - Application",
+        "description": "A Georgian fintech startup that helps businesses effortlessly track income and pay taxes in one click — simplifying finance, saving time, and ensuring compliance."
+      },
+      {
+        "title": "Avse - Landing",
+        "description": "A modern landing page for Avse, designed for conversion and clear communication of their services."
+      },
+      {
+        "title": "Pilz Accounting",
+        "description": "Pilz LTD provides accounting services in Georgia, both for Georgians and non-residents. Accounting is one of the main foundations of the financial success of any organization."
+      }
+    ]
+  },
+  "OurTeam": {
+    "title": "Meet our team",
+    "description": "We're not just a team — we're a crew of specialists, creators, and problem-solvers. Each member brings unique skills, international experience, and a shared passion for building amazing digital products.",
+    "members": [
+      {
+        "name": "Maya Unzip",
+        "role": "Frontend Developer"
+      },
+      {
+        "name": "Maya Unzip",
+        "role": "Backend Developer"
+      },
+      {
+        "name": "Maya Unzip",
+        "role": "Frontend Developer"
+      },
+      {
+        "name": "Maya Unzip",
+        "role": "Backend Developer"
+      }
+    ]
+  },
+  "Contact": {
+    "title": "Let's talk",
+    "description": "We'd love to hear about your project, idea, or challenge. Whether you're ready to start or just exploring, we're here to chat. 📬 Reach out — no pressure, just a friendly conversation.",
+    "phone": "(+995 577 77 77)"
+  },
+  "EmailForm": {
+    "subject": "Subject",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Your Message",
+    "send": "Send",
+    "errors": {
+      "subjectRequired": "Subject is required",
+      "subjectMin": "Subject must be at least 4 characters",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Email must contain \"@\"",
+      "phoneRequired": "Phone number is required",
+      "phoneInvalid": "Enter a valid phone number",
+      "messageRequired": "Message is required",
+      "messageMin": "Message must be at least 8 characters",
+      "messageWords": "Message must contain at least 3 words"
+    }
+  },
+ 
+  "Footer": {
+    "description": "Full-service digital marketing agency. Full-service digital marketing agency. Full-service digital marketing agency.",
+    "contact": "Contact",
+    "email": "info@pilz.com",
+    "phone": "(+995 577 77 77)",
+    "location": "Tbilisi, Georgia",
+    "navigation": "Navigation",
+    "contactUs": "Contact Us",
+    "aboutUs": "About Us",
+    "services": "Services",
+    "copyright": "© Synaptica Digital Studio. Copyright © 2025"
   }
+
+
 }

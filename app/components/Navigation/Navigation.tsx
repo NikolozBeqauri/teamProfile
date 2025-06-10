@@ -33,9 +33,9 @@ const Navigation = (props: Props) => {
                         </li>
                     </ul>
                 </nav>
-                    <div className={styles.buttonWrapper}>
+                    <a className={styles.buttonWrapper} href="#contact">
                         <ReusableButton title={"Leave a request"} />
-                    </div>
+                    </a>
             </div>
             <LanguagePicker />
         </section>
