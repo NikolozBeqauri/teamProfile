@@ -1,3 +1,4 @@
+import Contact from '../components/Contact/Contact';
 import Hero from '../components/Hero/Hero';
 import HowWeWork from '../components/HowWeWork/HowWeWork';
 import NavigationRender from '../components/NavigationRender/NavigationRender';
@@ -17,6 +18,7 @@ export default function HomePage() {
       <HowWeWork/>
       <OurCases/>
       <OurTeam/>
+      <Contact/>
     </div>
   );
 }

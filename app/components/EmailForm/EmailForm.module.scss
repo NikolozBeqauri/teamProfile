@@ -1,0 +1,121 @@
+@use '../../_colors.scss' as *;
+
+.emailForm {
+    margin-top: 70px;
+}
+
+.inputsWrapper {
+    display: flex;
+    gap: 85px;
+}
+
+.firstDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.firstDiv > div{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 430px;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 25px;
+        height: 2px;
+        width: 0;
+        background-color: $serviceBlue;
+        transition: width 0.3s ease-in-out;
+    }
+
+    &:has(input:focus) {
+        &::after {
+            width: calc(100% - 25px);
+        }
+    }
+}
+
+.secondDiv > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    min-width: 430px;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        height: 2px;
+        width: 0;
+        background-color: $serviceBlue;
+        transition: width 0.3s ease-in-out;
+    }
+
+    &:has(textarea:focus) {
+        &::after {
+            width: 100%;
+        }
+    }
+}
+.secondDiv textarea {
+    height: 41px;
+    padding: 8px 12px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $white;
+    color: $white;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    resize: none;
+    transition: height 0.3s ease-in-out;
+
+    &:focus {
+        height: 105px;
+    }
+}
+
+.firstDiv input,
+.secondDiv textarea {
+    padding: 8px 12px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $white;
+    color: $white;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    resize: none;
+}
+
+.secondDiv {
+    min-width: 430px;
+}
+
+.secondDiv textarea {
+    height: 41px;
+}
+
+.buttonWrapper {
+    margin-top: 24px;
+    max-width: 160px;
+}
+.error {
+    color: red;
+    font-size: 12px;
+}
+.secondDiv .error {
+    margin-top: 24px;
+}
+
+#textareaFilled {
+    height: 105px;
+}
