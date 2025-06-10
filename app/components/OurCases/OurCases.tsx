@@ -1,18 +1,21 @@
 import styles from './OurCases.module.scss'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 const OurCases = () => {
+    const t = useTranslations('OurCases')
+
     return (
         <div className={styles.wrapper}>
             <div className={styles.texts}>
                 <Image
-                src={'/fire.svg'}
-                alt='fire Icon'
-                height={117}
-                width={70}
-            />
-                <h2>Our cases</h2>
-                <p>Our team consists of highly qualified specialists with international experience in the field of Web development, mobile development,</p>
+                    src={'/fire.svg'}
+                    alt='fire Icon'
+                    height={117}
+                    width={70}
+                />
+                <h2>{t('title')}</h2>
+                <p>{t('description')}</p>
             </div>
             <div className={styles.casesWrapper}>
                 <div className={styles.avseApp}>
@@ -23,31 +26,31 @@ const OurCases = () => {
                         width={363}
                     />
                     <div className={styles.secondaryTexts}>
-                        <h3>Avse - Application</h3>
-                        <p>A Georgian fintech startup that helps businesses effortlessly track income and pay taxes in one click — simplifying finance, saving time, and ensuring compliance.</p>
+                        <h3>{t('cases.0.title')}</h3>
+                        <p>{t('cases.0.description')}</p>
                     </div>
                 </div>
                 <div className={styles.secondSectionWrapper}>
                     <div className={styles.avseLanding}>
                         <div className={styles.secondaryTexts}>
-                            <h3>Avse - Application</h3>
-                            <p>A Georgian fintech startup that helps businesses effortlessly track income and pay taxes in one click — simplifying finance, saving time, and ensuring compliance.</p>
+                            <h3>{t('cases.1.title')}</h3>
+                            <p>{t('cases.1.description')}</p>
                         </div>
                         <Image
                             src={'/avseLanding.png'}
-                            alt='avseApp'
+                            alt='avseLanding'
                             height={307}
                             width={481}
                         />
                     </div>
                     <div className={styles.pilzWrapper}>
                         <div className={styles.secondaryTexts}>
-                            <h3>Pilz Accounting</h3>
-                            <p>Pilz LTD provides accounting services in Georgia, both for Georgians and non-residents. Accounting is one of the main foundations of the financial success of any organization.</p>
+                            <h3>{t('cases.2.title')}</h3>
+                            <p>{t('cases.2.description')}</p>
                         </div>
                         <Image
                             src={'/pilzLanding.png'}
-                            alt='avseApp'
+                            alt='pilzLanding'
                             height={307}
                             width={481}
                         />

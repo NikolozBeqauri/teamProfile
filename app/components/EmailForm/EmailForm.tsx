@@ -5,18 +5,17 @@ import styles from './EmailForm.module.scss';
 import Image from 'next/image';
 import ReusableButton from '../ReusableButton/ReusableButton';
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 const EmailForm = () => {
+    const t = useTranslations('EmailForm');
     const {
         register,
         handleSubmit,
         formState: { errors },
     } = useForm();
 
-
     const [messageFilled, setMessageFilled] = useState(false);
-    console.log(messageFilled);
-    
 
     const onSubmit = (data: any) => {
         console.log(data);
@@ -31,12 +30,12 @@ const EmailForm = () => {
                         <Image src="/subject.svg" alt="subject icon" width={17} height={17} />
                         <input
                             type="text"
-                            placeholder="Subject"
+                            placeholder={t('subject')}
                             {...register('subject', {
-                                required: 'Subject is required',
+                                required: t('errors.subjectRequired'),
                                 minLength: {
                                     value: 4,
-                                    message: 'Subject must be at least 4 characters',
+                                    message: t('errors.subjectMin'),
                                 },
                             })}
                         />
@@ -50,12 +49,12 @@ const EmailForm = () => {
                         <Image src="/email.svg" alt="email icon" width={17} height={17} />
                         <input
                             type="email"
-                            placeholder="Email"
+                            placeholder={t('email')}
                             {...register('email', {
-                                required: 'Email is required',
+                                required: t('errors.emailRequired'),
                                 pattern: {
                                     value: /.+@.+/,
-                                    message: 'Email must contain "@"',
+                                    message: t('errors.emailInvalid'),
                                 },
                             })}
                         />
@@ -69,12 +68,12 @@ const EmailForm = () => {
                         <Image src="/phone.svg" alt="phone icon" width={17} height={17} />
                         <input
                             type="text"
-                            placeholder="Phone"
+                            placeholder={t('phone')}
                             {...register('phone', {
-                                required: 'Phone number is required',
+                                required: t('errors.phoneRequired'),
                                 pattern: {
                                     value: /^[0-9]{8,14}$/,
-                                    message: 'Enter a valid phone number',
+                                    message: t('errors.phoneInvalid'),
                                 },
                             })}
                         />
@@ -88,16 +87,16 @@ const EmailForm = () => {
                 <div className={styles.secondDiv}>
                     <div>
                         <textarea
-                            placeholder="Your Message"
-                            id={messageFilled ? styles.textareaFilled : ""}
+                            placeholder={t('message')}
+                            id={messageFilled ? styles.textareaFilled : ''}
                             {...register('message', {
-                                required: 'Message is required',
+                                required: t('errors.messageRequired'),
                                 validate: {
                                     minLength: (value) =>
-                                        value.length >= 8 || 'Message must be at least 8 characters',
+                                        value.length >= 8 || t('errors.messageMin'),
                                     minWords: (value) =>
                                         value.trim().split(/\s+/).length >= 3 ||
-                                        'Message must contain at least 3 words',
+                                        t('errors.messageWords'),
                                 },
                                 onChange: (e) => {
                                     const value = e.target.value;
@@ -111,7 +110,7 @@ const EmailForm = () => {
                     )}
 
                     <div className={styles.buttonWrapper}>
-                        <ReusableButton title="Send" type="submit" imgName="blueArrow" />
+                        <ReusableButton title={t('send')} type="submit" imgName="blueArrow" />
                     </div>
                 </div>
             </div>

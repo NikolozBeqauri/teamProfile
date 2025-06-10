@@ -1,50 +1,47 @@
 import styles from './HowWeWork.module.scss'
+import { useTranslations } from "next-intl";
 
 const HowWeWork = () => {
+    const t = useTranslations('HowWeWork');
 
     const steps = [
-        {
-            number: '01',
-            title: 'Briefing',
-            description:
-                'We define your brand identity, including style, tone, and visual elements that will guide the design.',
-        },
-        {
-            number: '02',
-            title: 'Branding',
-            description:
-                'We define your brand identity, including style, tone, and visual elements that will guide the design.',
-        },
-        {
-            number: '03',
-            title: 'Branding',
-            description:
-                'We define your brand identity, including style, tone, and visual elements that will guide the design.',
-        },
-        {
-            number: '04',
-            title: 'Branding',
-            description:
-                'We define your brand identity, including style, tone, and visual elements that will guide the design.',
-        },
-        {
-            number: '05',
-            title: 'Branding',
-            description:
-                'We define your brand identity, including style, tone, and visual elements that will guide the design.',
-        },
-        {
-            number: '06',
-            title: 'Branding',
-            description:
-                'We define your brand identity, including style, tone, and visual elements that will guide the design.',
-        },
+    {
+        number: '01',
+        title: t('steps.0.title'),
+        description: t('steps.0.description'),
+    },
+    {
+        number: '02',
+        title: t('steps.1.title'),
+        description: t('steps.1.description'),
+    },
+    {
+        number: '03',
+        title: t('steps.2.title'),
+        description: t('steps.2.description'),
+    },
+    {
+        number: '04',
+        title: t('steps.3.title'),
+        description: t('steps.3.description'),
+    },
+    {
+        number: '05',
+        title: t('steps.4.title'),
+        description: t('steps.4.description'),
+    },
+    {
+        number: '06',
+        title: t('steps.5.title'),
+        description: t('steps.5.description'),
+    },
+];
 
-    ];
+
 
     return (
-        <div className={styles.wrapper}>
-            <h2>How we <p>work</p></h2>
+        <div className={styles.wrapper} id='aboutUs'>
+            <h2>{t('titlePart1')} <p>{t('titlePart2')}</p></h2>
             <div className={styles.cards}>
                 {steps.map((step, index) => (
                     <div className={styles.stepCard} key={index}>

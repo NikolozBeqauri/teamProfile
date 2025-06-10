@@ -1,40 +1,42 @@
 import Marquee from "react-fast-marquee";
 import styles from "./OurTeam.module.scss";
-
-const items = [
-    {
-        src: "/userPhoto.png",
-        alt: "Maya Unzip",
-        title: "Maya Unzip",
-        subtitle: "Frontend developer",
-    },
-    {
-        src: "/userPhoto2.png",
-        alt: "Maya Unzip",
-        title: "Maya Unzip",
-        subtitle: "Backend Developer",
-    },
-    {
-        src: "/userPhoto.png",
-        alt: "Maya Unzip",
-        title: "Maya Unzip",
-        subtitle: "Frontend developer",
-    },
-    {
-        src: "/userPhoto2.png",
-        alt: "Maya Unzip",
-        title: "Maya Unzip",
-        subtitle: "Backend Developer",
-    },
-];
+import { useTranslations } from "next-intl";
 
 const OurTeam = () => {
+    const t = useTranslations("OurTeam");
+
+    const items = [
+        {
+            src: "/userPhoto.png",
+            alt: "Maya Unzip",
+            title: t("members.0.name"),
+            subtitle: t("members.0.role"),
+        },
+        {
+            src: "/userPhoto2.png",
+            alt: "Maya Unzip",
+            title: t("members.1.name"),
+            subtitle: t("members.1.role"),
+        },
+        {
+            src: "/userPhoto.png",
+            alt: "Maya Unzip",
+            title: t("members.2.name"),
+            subtitle: t("members.2.role"),
+        },
+        {
+            src: "/userPhoto2.png",
+            alt: "Maya Unzip",
+            title: t("members.3.name"),
+            subtitle: t("members.3.role"),
+        },
+    ];
+
     return (
         <section>
             <div className={styles.mainTexts}>
-                <h2>Meet our team</h2>
-                <p>We're not just a team — we're a crew of specialists, creators, and problem-solvers. Each member brings unique 
-                    skills, international experience, and a shared passion for building amazing digital products.</p>
+                <h2>{t("title")}</h2>
+                <p>{t("description")}</p>
             </div>
             <div className={styles.wrapper}>
                 <div className={styles.gradientLeft} />
@@ -44,7 +46,6 @@ const OurTeam = () => {
                         <div key={index} className={styles.card}>
                             <div className={styles.imageWrapper}>
                                 <img src={item.src} alt={item.alt} className={styles.image} />
-
                             </div>
                             <div className={styles.texts}>
                                 <h3>{item.title}</h3>
@@ -54,9 +55,8 @@ const OurTeam = () => {
                     ))}
                 </Marquee>
             </div>
-
         </section>
-    )
+    );
 };
 
 export default OurTeam;
