@@ -7,22 +7,22 @@ const Hero = () => {
 
     const socialIcons = [
         {
-            name: 'facebook',
+            name: 'email',
             href: '#',
-            defaultSrc: '/whiteFacebook.svg',
+            defaultSrc: '/whiteEmail.svg',
             alt: 'Facebook icon',
-        },
-        {
-            name: 'instagram',
-            href: '#',
-            defaultSrc: '/whiteInstagram.svg',
-            alt: 'Instagram icon',
         },
         {
             name: 'twitter',
             href: '#',
             defaultSrc: '/whiteTwitter.svg',
             alt: 'Twitter icon',
+        },
+        {
+            name: 'linkedin',
+            href: '#',
+            defaultSrc: '/linkedin.svg',
+            alt: 'Instagram icon',
         },
     ];
 
@@ -46,6 +46,7 @@ const Hero = () => {
                         <img
                             src={icon.defaultSrc}
                             alt={icon.alt}
+                            height={20}
                         />
                     </Link>
                 ))}

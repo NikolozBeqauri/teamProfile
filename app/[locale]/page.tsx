@@ -1,4 +1,5 @@
 import Contact from '../components/Contact/Contact';
+import FooterSection from '../components/FooterSection/FooterSection';
 import Hero from '../components/Hero/Hero';
 import HowWeWork from '../components/HowWeWork/HowWeWork';
 import NavigationRender from '../components/NavigationRender/NavigationRender';
@@ -19,6 +20,7 @@ export default function HomePage() {
       <OurCases/>
       <OurTeam/>
       <Contact/>
+      <FooterSection/>
     </div>
   );
 }
