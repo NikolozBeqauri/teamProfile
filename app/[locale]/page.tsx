@@ -14,7 +14,13 @@ export default function HomePage() {
     <div>
       <NavigationRender />
       <Hero/>
-
+      <ServiceSection/>
+      <OurPartners/>
+      <HowWeWork/>
+      <OurCases/>
+      <OurTeam/>
+      <Contact/>
+      <FooterSection/>
     </div>
   );
 }
