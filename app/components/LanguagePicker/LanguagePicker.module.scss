@@ -1,18 +1,20 @@
 @use '../../_colors.scss' as *;
+
 .activeLanguage {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
 }
+
 .wrapper {
-    position: relative;
+  position: relative;
 }
 
 .modalContainer {
   position: absolute;
   top: 40px;
-  left: -6px; 
+  left: 0px;
   width: 90px;
   padding: 8px 0;
   border-radius: 12px;
@@ -31,12 +33,10 @@
     left: -75%;
     width: 50%;
     height: 100%;
-    background: linear-gradient(
-      120deg,
-      transparent,
-      rgba($primaryBlue, 0.5),
-      transparent
-    );
+    background: linear-gradient(120deg,
+        transparent,
+        rgba($primaryBlue, 0.5),
+        transparent);
     transform: skewX(-25deg);
     pointer-events: none;
   }
@@ -47,43 +47,47 @@
 }
 
 .activeFlag {
-    border-radius: 2px;
+  border-radius: 2px;
 }
+
 .downArrow {
-    margin-left: 4px;
+  margin-left: 4px;
 }
+
 .modalContainer {
-    display: flex;
-    flex-direction: column;
-    border-radius: 12px;
-    padding: 4px 16px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 4px 16px;
 }
 
 .modalContainer>div {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    cursor: pointer;
-    padding: 8px 0px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px 0px;
 
 }
 
-.modalContainer > div > img {
-    border-radius: 2px;
+.modalContainer>div>img {
+  border-radius: 2px;
 }
+
 @keyframes shine {
   0% {
     left: -75%;
   }
+
   100% {
     left: 125%;
   }
 }
 
 @media (max-width: 768px) {
-    .modalContainer {
-        position: relative;
-        top: 8px;
-        margin-bottom: 24px;
-    }
+  .modalContainer {
+    position: relative;
+    top: 8px;
+    margin-bottom: 24px;
+  }
 }
