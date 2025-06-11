@@ -37,6 +37,13 @@ const Hero = () => {
                     width={656}
                     height={515}
                 />
+                <Image
+                    className={styles.heroLaptopImage}
+                    src={'/hero.png'}
+                    alt='hero image'
+                    width={580}
+                    height={550}
+                />
                 <h1>Simple solutions <p>for complex</p> <p>problems</p></h1>
             </div>
 
