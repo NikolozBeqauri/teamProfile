@@ -3,6 +3,7 @@
 .wrapper {
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .gradientLeft,
@@ -24,8 +25,7 @@
 .gradientRight {
   right: 0;
   background: linear-gradient(to left, $primaryDark, transparent);
-    z-index: 2;
-
+  z-index: 2;
 }
 
 .image {
