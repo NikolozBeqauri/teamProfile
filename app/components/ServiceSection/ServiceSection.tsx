@@ -60,6 +60,7 @@ const ServiceSection = () => {
             <Image
               src={selectedService.image}
               alt={selectedService.name}
+              className={styles.image}
               width={600}
               height={400}
             />
