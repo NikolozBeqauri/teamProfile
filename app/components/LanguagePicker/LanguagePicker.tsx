@@ -8,9 +8,10 @@ import { motion, AnimatePresence } from "framer-motion";
 
 type Props = {
   setActive?: React.Dispatch<React.SetStateAction<boolean>>;
+  setPickerOpen?: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const LanguagePicker = (props: Props) => {
+const LanguagePicker = ({ setActive, setPickerOpen }: Props) => {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
@@ -30,24 +31,30 @@ const LanguagePicker = (props: Props) => {
     const newPath = segments.join('/');
     router.push(newPath);
     setActivePicker(false);
+    setPickerOpen?.(false);
+  };
+
+  const togglePicker = () => {
+    const next = !activePicker;
+    setActivePicker(next);
+    setPickerOpen?.(next);
   };
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (pickerRef.current && !pickerRef.current.contains(event.target as Node)) {
         setActivePicker(false);
+        setPickerOpen?.(false);
       }
     };
 
     document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
   return (
     <div className={styles.wrapper} ref={pickerRef}>
-      <div className={styles.activeLanguage} onClick={() => setActivePicker(!activePicker)}>
+      <div className={styles.activeLanguage} onClick={togglePicker}>
         <Image
           src={`/${locale}.svg`}
           alt={`${locale} flag`}
@@ -86,7 +93,7 @@ const LanguagePicker = (props: Props) => {
                   }
                   onClick={() => {
                     changeLanguage(lang);
-                    props.setActive?.(false);
+                    setActive?.(false);
                   }}
                 >
                   <Image
