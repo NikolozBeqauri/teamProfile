@@ -20,6 +20,7 @@ export default function HomePage() {
       <OurCases/>
       <OurTeam/>
       <Contact/>
+      <FooterSection/>
     </div>
   );
 }

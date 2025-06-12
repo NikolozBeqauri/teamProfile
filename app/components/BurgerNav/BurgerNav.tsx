@@ -13,7 +13,7 @@ interface Props {
 
 const BurgerNav = (props: Props) => {
     const [active, setActive] = useState(false);
-    const [pickerOpen, setPickerOpen] = useState(false); // Track picker state
+    const [pickerOpen, setPickerOpen] = useState(false); 
     const t = useTranslations('Navigation');
 
     return (
