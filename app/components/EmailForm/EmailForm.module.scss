@@ -15,7 +15,7 @@
     gap: 24px;
 }
 
-.firstDiv > div{
+.firstDiv>div {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -40,7 +40,7 @@
     }
 }
 
-.secondDiv > div{
+.secondDiv>div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,6 +65,7 @@
         }
     }
 }
+
 .secondDiv textarea {
     height: 41px;
     padding: 8px 12px;
@@ -108,14 +109,61 @@
     margin-top: 24px;
     max-width: 160px;
 }
+
 .error {
     color: red;
     font-size: 12px;
 }
+
 .secondDiv .error {
     margin-top: 24px;
 }
 
 #textareaFilled {
     height: 105px;
+}
+
+
+@media (max-width: 1024px) {
+    .emailForm {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .inputsWrapper {
+        flex-direction: column;
+        max-width: 620px;
+        width: 100%;
+        gap: 24px;
+    }
+
+    .secondDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secondDiv>div {
+        min-width: auto;
+    }
+
+    .buttonWrapper {
+        align-self: flex-end;
+        width: 100%;
+    }
+}
+
+@media (max-width: 850px) {
+    .texts h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .firstDiv>div {
+        min-width: auto;
+    }
+    .secondDiv {
+        min-width: auto;
+    }
 }

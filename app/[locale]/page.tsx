@@ -19,7 +19,7 @@ export default function HomePage() {
       <HowWeWork/>
       <OurCases/>
       <OurTeam/>
-
+      <Contact/>
     </div>
   );
 }
