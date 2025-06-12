@@ -4,7 +4,7 @@
     max-width: 1560px;
     width: 100%;
     margin: 0 auto;
-    padding: 16px 0px;
+    padding: 16px;
     margin-bottom: 140px;
 }
 
@@ -14,6 +14,7 @@
     line-height: 52px;
     margin-bottom: 12px;
 }
+
 .mainTexts p {
     font-size: 18px;
     font-weight: 500;
@@ -56,8 +57,8 @@
 
 .imageWrapper {
     position: relative;
-    width: 374px;
-    height: 374px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 32px;
@@ -80,4 +81,83 @@
     font-size: 18px;
     font-weight: 500;
     color: #ccc;
+}
+
+@media (max-width: 1024px) {
+    .mainTexts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .mainTexts h2 {
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .mainTexts p {
+        text-align: center;
+    }
+
+    .card {
+        margin: 0 60px;
+    }
+
+    .imageWrapper {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 850px) {
+    .mainTexts {
+        margin-bottom: 60px;
+    }
+
+    .mainTexts h2 {
+        font-size: 32px;
+    }
+
+    .mainTexts p {
+        font-size: 16px;
+    }
+
+    .texts h3 {
+        font-size: 20px;
+    }
+
+    .texts p {
+        font-size: 16px;
+    }
+    .imageWrapper {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainTexts {
+        margin-bottom: 50px;
+    }
+
+    .mainTexts h2 {
+        font-size: 28px;
+    }
+    .card {
+        margin: 0 40px;
+    }
+}
+
+@media (max-width: 630px) {
+    .card {
+        margin: 0 20px;
+    }
+     .mainTexts h2 {
+        font-size: 24px;
+    }
+    .imageWrapper {
+        width: 120px;
+        height: 120px;
+    }
 }
