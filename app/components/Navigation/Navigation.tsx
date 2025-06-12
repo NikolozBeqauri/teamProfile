@@ -23,13 +23,13 @@ const Navigation = (props: Props) => {
                 <nav>
                     <ul>
                         <li>
-                            <a href={props.notIndexPage ? "/#services" : "#services"}>{t('services')}</a>
+                            <Link href={props.notIndexPage ? "/#services" : "#services"}>{t('services')}</Link>
                         </li>
                         <li>
-                            <a href={props.notIndexPage ? "/#aboutUs" : "#aboutUs"}>{t('aboutUs')}</a>
+                            <Link href={props.notIndexPage ? "/#aboutUs" : "#aboutUs"}>{t('aboutUs')}</Link>
                         </li>
                         <li>
-                            <a href={props.notIndexPage ? "/#contact" : "#contact"}>{t('contact')}</a>
+                            <Link href={props.notIndexPage ? "/#contact" : "#contact"}>{t('contact')}</Link>
                         </li>
                     </ul>
                 </nav>

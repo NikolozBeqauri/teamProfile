@@ -41,7 +41,7 @@ const OurTeam = () => {
             <div className={styles.wrapper}>
                 <div className={styles.gradientLeft} />
                 <div className={styles.gradientRight} />
-                <Marquee speed={40} pauseOnHover gradient={false} direction="left" loop={0}>
+                <Marquee speed={5} gradient={false} direction="left" loop={0}>
                     {items.map((item, index) => (
                         <div key={index} className={styles.card}>
                             <div className={styles.imageWrapper}>

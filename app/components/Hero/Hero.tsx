@@ -8,21 +8,21 @@ const Hero = () => {
     const socialIcons = [
         {
             name: 'email',
-            href: '#',
+            href: 'https://mail.google.com/mail/?view=cm&fs=1&to=synaptica.online@gmail.com&su=Subject&body=YourMessage',
             defaultSrc: '/whiteEmail.svg',
-            alt: 'email icon',
+            alt: 'Facebook icon',
         },
         {
             name: 'twitter',
-            href: '#',
+            href: 'https://x.com/SynapticaDev',
             defaultSrc: '/whiteTwitter.svg',
             alt: 'Twitter icon',
         },
         {
             name: 'linkedin',
-            href: '#',
+            href: 'https://www.linkedin.com/company/synapticadev',
             defaultSrc: '/linkedin.svg',
-            alt: 'linkedin icon',
+            alt: 'Instagram icon',
         },
     ];
 
@@ -49,12 +49,14 @@ const Hero = () => {
 
             <div className={styles.socialWrapper}>
                 {socialIcons.map(icon => (
-                    <Link href={icon.href} key={icon.name} className={styles.socialItem}>
-                        <img
-                            src={icon.defaultSrc}
-                            alt={icon.alt}
-                            height={20}
-                        />
+                    <Link
+                        href={icon.href}
+                        key={icon.name}
+                        className={styles.socialItem}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img src={icon.defaultSrc} alt={icon.alt} height={20} />
                     </Link>
                 ))}
             </div>
