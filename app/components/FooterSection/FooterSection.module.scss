@@ -108,3 +108,53 @@
     font-weight: 500;
     color: $copyRight;
 }
+
+@media (max-width: 1024px) {
+    .logosection {
+        gap: 24px;
+    }
+    .secondaryWrapper {
+        gap: 80px;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .logosection {
+        gap: 24px;
+        margin-right: 16px;
+    }
+    .secondaryWrapper {
+        gap: 60px;
+    }
+}
+
+@media (max-width: 720px) {
+    .firstSection {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+    .logosection {
+        margin-right: 0;
+        align-items: center;
+    }
+    .logosection p {
+        text-align: center;
+    }
+    .secondaryWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .secondaryWrapper > div {
+        align-items: center;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .secondSection p {
+        text-align: center;
+    }
+}
