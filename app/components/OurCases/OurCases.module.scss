@@ -117,6 +117,7 @@
     overflow: hidden;
     border-radius: 24px;
     gap: 64px;
+
     &::before {
         content: '';
         position: absolute;
@@ -170,3 +171,174 @@
 }
 
 //animation end
+.pilzLandingLaptopImg {
+    display: none;
+}
+
+.leptopH3 {
+    display: none;
+}
+
+@media (max-width: 1300px) {
+
+    .avseLanding,
+    .pilzWrapper {
+        padding: 24px 16px;
+    }
+
+    .avseApp {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .avseLanding,
+    .pilzWrapper {
+        gap: 16px;
+    }
+
+    .secondaryTexts h3 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        margin-bottom: 18px;
+    }
+
+    .secondaryTexts p {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+
+    .casesWrapper {
+        gap: 24px
+    }
+
+    .secondSectionWrapper {
+        gap: 32px
+    }
+
+    .avseApp {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .secondaryTexts h3 {
+        font-size: 18px;
+
+    }
+
+    .secondaryTexts p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        padding: 100px 64px;
+    }
+
+    .texts h2 {
+        font-size: 36px;
+    }
+
+    .casesWrapper {
+        flex-direction: column;
+    }
+
+    .avseApp {
+        flex-direction: row-reverse;
+        max-width: 100%;
+        min-height: auto;
+        justify-content: space-between;
+        padding: 32px;
+    }
+
+    .avseLanding,
+    .pilzWrapper {
+        justify-content: space-between;
+        padding: 32px;
+    }
+}
+
+@media (max-width: 850px) {
+    .texts {
+        align-items: center;
+    }
+
+    .texts h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .texts p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .texts img {
+        display: none;
+    }
+}
+
+@media (max-width: 730px) {
+    .wrapper {
+        align-items: center;
+    }
+
+    .texts h2 {
+        font-size: 28px;
+    }
+
+    .avseApp {
+        justify-content: center;
+        padding: 32px;
+        max-width: 550px;
+    }
+
+    .avseLanding,
+    .pilzWrapper {
+        max-width: 550px;
+        justify-content: center;
+    }
+
+    .secondaryTexts {
+        display: none;
+    }
+
+    .pilzLandingImg {
+        display: none;
+    }
+
+    .pilzLandingLaptopImg {
+        display: flex;
+    }
+
+    .leptopH3 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 630px) {
+    .secondSectionWrapper {
+        gap: 24px;
+    }
+
+    .texts h2 {
+        font-size: 24px;
+    }
+
+    .wrapper {
+        padding: 100px 24px;
+    }
+
+    .avseApp,
+    .avseLanding,
+    .pilzWrapper {
+        padding: 12px 16px;
+    }
+}
