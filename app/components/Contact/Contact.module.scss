@@ -40,3 +40,36 @@
     line-height: 28px;
     color: $secondaryGray;
 }
+
+
+@media (max-width: 1024px) {
+    .texts {
+        align-items: center;
+    }
+    .texts h2 {
+        font-size: 36px;
+    }
+    .texts p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 850px) {
+    .texts h2 {
+        font-size: 32px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .texts h2 {
+        font-size: 28px;
+    }
+
+}
+
+@media (max-width: 630px) {
+    .texts h2 {
+        font-size: 24px;
+    }
+}
