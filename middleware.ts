@@ -22,7 +22,7 @@ export default function middleware(req: NextRequest) {
     return createMiddleware(routing)(req);
   }
 
-  const newLocale = localeCookie || 'ka';
+  const newLocale = localeCookie || 'en';
   url.pathname = `/${newLocale}${url.pathname}`;
 
   const res = NextResponse.redirect(url);

@@ -20,15 +20,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 
   const titles: { [key: string]: string } = {
-    en: 'Pilz',
-    ka: 'პილც'
+    en: 'Synaptica',
+    ka: 'Synaptica'
   };
 
   return {
     title: titles[locale] || titles.ka,
     description: descriptions[locale] || descriptions.ka,
      icons: {
-      icon: '/tabLogo.svg',
+      icon: '/onlyLogo.svg',
     },
   };
 }
