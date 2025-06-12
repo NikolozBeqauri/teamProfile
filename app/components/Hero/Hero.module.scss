@@ -21,8 +21,8 @@
 .heroImage,
 .heroLaptopImage {
     position: absolute;
-    top: -200;
-    left: -200;
+    top: -200px;
+    left: -200px;
     z-index: -1;
 }
 
@@ -67,8 +67,8 @@
     }
 
     .heroImage {
-        top: -240;
-        left: -200;
+        top: -240px;
+        left: -200px;
     }
 }
 
@@ -90,8 +90,8 @@
 
     .heroLaptopImage {
         display: flex;
-        top: -150;
-        left: -150
+        top: -150px;
+        left: -150px;
     }
 }
 
@@ -112,8 +112,8 @@
         display: flex;
         width: 350px;
         height: 350px;
-        top: -100;
-        left: -100
+        top: -100px;
+        left: -100px;
     }
 
     .socialItem img {
@@ -137,8 +137,8 @@
         display: flex;
         width: 350px;
         height: 350px;
-        top: -100;
-        left: -100
+        top: -100px;
+        left: -100px;
     }
 
     .socialItem img {

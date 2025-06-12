@@ -18,8 +18,7 @@ const UserSlider = () => (
     <div className={styles.gradientLeft} />
     <div className={styles.gradientRight} />
     <Marquee
-      speed={40}
-      pauseOnHover={true}
+      speed={5}
       gradient={false}
       direction="left"
       loop={0}

@@ -9,19 +9,19 @@ const FooterSection = () => {
     const socialIcons = [
         {
             name: 'email',
-            href: '#',
+            href: 'https://mail.google.com/mail/?view=cm&fs=1&to=synaptica.online@gmail.com&su=Subject&body=YourMessage',
             defaultSrc: '/whiteEmail.svg',
             alt: 'Facebook icon',
         },
         {
             name: 'twitter',
-            href: '#',
+            href: 'https://x.com/SynapticaDev',
             defaultSrc: '/whiteTwitter.svg',
             alt: 'Twitter icon',
         },
         {
             name: 'linkedin',
-            href: '#',
+            href: 'https://www.linkedin.com/company/synapticadev',
             defaultSrc: '/linkedin.svg',
             alt: 'Instagram icon',
         },
@@ -44,12 +44,14 @@ const FooterSection = () => {
 
                         <div className={styles.socialWrapper}>
                             {socialIcons.map(icon => (
-                                <Link href={icon.href} key={icon.name} className={styles.socialItem}>
-                                    <img
-                                        src={icon.defaultSrc}
-                                        alt={icon.alt}
-                                        height={20}
-                                    />
+                                <Link
+                                    href={icon.href}
+                                    key={icon.name}
+                                    className={styles.socialItem}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <img src={icon.defaultSrc} alt={icon.alt} height={20} />
                                 </Link>
                             ))}
                         </div>
@@ -89,9 +91,9 @@ const FooterSection = () => {
 
                         <div className={styles.navigation}>
                             <h3>{t('navigation')}</h3>
-                            <Link href="#">{t('contactUs')}</Link>
-                            <Link href="#">{t('aboutUs')}</Link>
-                            <Link href="#">{t('services')}</Link>
+                            <Link href="/#contact">{t('contactUs')}</Link>
+                            <Link href="/#aboutUs">{t('aboutUs')}</Link>
+                            <Link href="/#services">{t('services')}</Link>
                         </div>
                     </div>
                 </div>
