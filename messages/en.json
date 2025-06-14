@@ -71,20 +71,20 @@
     "description": "We're not just a team — we're a crew of specialists, creators, and problem-solvers. Each member brings unique skills, international experience, and a shared passion for building amazing digital products.",
     "members": [
       {
-        "name": "Maya Unzip",
-        "role": "Frontend Developer"
+        "name": "Maria",
+        "role": "Graphic Designer"
       },
       {
-        "name": "Maya Unzip",
-        "role": "Backend Developer"
+        "name": "Irakli",
+        "role": "Founder & CEO"
       },
       {
-        "name": "Maya Unzip",
-        "role": "Frontend Developer"
+        "name": "Nikoloz",
+        "role": "Co-Founder & Web Developer"
       },
       {
-        "name": "Maya Unzip",
-        "role": "Backend Developer"
+        "name": "Guga",
+        "role": "UI/UX Designer"
       }
     ]
   },

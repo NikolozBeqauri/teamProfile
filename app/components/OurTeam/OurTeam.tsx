@@ -7,26 +7,50 @@ const OurTeam = () => {
 
     const items = [
         {
-            src: "/userPhoto.png",
-            alt: "Maya Unzip",
-            title: t("members.0.name"),
-            subtitle: t("members.0.role"),
-        },
-        {
             src: "/userPhoto2.png",
-            alt: "Maya Unzip",
+            alt: "ika",
             title: t("members.1.name"),
             subtitle: t("members.1.role"),
         },
         {
             src: "/userPhoto.png",
-            alt: "Maya Unzip",
+            alt: "nika",
             title: t("members.2.name"),
             subtitle: t("members.2.role"),
         },
         {
+            src: "/mari.png",
+            alt: "Maria",
+            title: t("members.0.name"),
+            subtitle: t("members.0.role"),
+        },
+        {
             src: "/userPhoto2.png",
-            alt: "Maya Unzip",
+            alt: "guga",
+            title: t("members.3.name"),
+            subtitle: t("members.3.role"),
+        },
+        {
+            src: "/userPhoto2.png",
+            alt: "ika",
+            title: t("members.1.name"),
+            subtitle: t("members.1.role"),
+        },
+        {
+            src: "/userPhoto.png",
+            alt: "nika",
+            title: t("members.2.name"),
+            subtitle: t("members.2.role"),
+        },
+        {
+            src: "/mari.png",
+            alt: "Maria",
+            title: t("members.0.name"),
+            subtitle: t("members.0.role"),
+        },
+        {
+            src: "/userPhoto2.png",
+            alt: "guga",
             title: t("members.3.name"),
             subtitle: t("members.3.role"),
         },
@@ -41,7 +65,7 @@ const OurTeam = () => {
             <div className={styles.wrapper}>
                 <div className={styles.gradientLeft} />
                 <div className={styles.gradientRight} />
-                <Marquee speed={5} gradient={false} direction="left" loop={0}>
+                <Marquee speed={15} gradient={false} direction="left" loop={0}>
                     {items.map((item, index) => (
                         <div key={index} className={styles.card}>
                             <div className={styles.imageWrapper}>

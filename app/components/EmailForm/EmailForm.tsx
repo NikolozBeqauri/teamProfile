@@ -6,8 +6,10 @@ import Image from 'next/image';
 import ReusableButton from '../ReusableButton/ReusableButton';
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import emailjs from 'emailjs-com';
 
-interface EmailFormInputs {
+
+type EmailFormInputs = {
     subject: string;
     email: string;
     phone: string;
@@ -19,6 +21,7 @@ const EmailForm = () => {
     const {
         register,
         handleSubmit,
+        reset,
         formState: { errors },
     } = useForm<EmailFormInputs>();
 
@@ -26,6 +29,20 @@ const EmailForm = () => {
 
     const onSubmit = (data: EmailFormInputs) => {
         console.log(data);
+
+        emailjs.send(
+            'service_e7zlq5d',
+            'template_4mtd3zh',
+            data,
+            'TS0ET2YRoeux9FCOG'
+        )
+            .then((result) => {
+                console.log('Email successfully sent!', result.text);
+                reset();
+            })
+            .catch((error) => {
+                console.error('There was an error sending the email:', error.text);
+            });
     };
 
     return (
