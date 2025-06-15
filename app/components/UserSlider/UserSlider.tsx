@@ -1,16 +1,12 @@
 import Marquee from "react-fast-marquee";
 import styles from './UserSlider.module.scss'
 const logos = [
-  { src: "/kssda.png", alt: "KSSDA" },
-  { src: "/serviceWeb.png", alt: "Service Web" },
-  { src: "/kssda.png", alt: "KSSDA" },
-  { src: "/serviceWeb.png", alt: "Service Web" },
-  { src: "/kssda.png", alt: "KSSDA" },
-  { src: "/serviceWeb.png", alt: "Service Web" },
-  { src: "/kssda.png", alt: "KSSDA" },
-  { src: "/serviceWeb.png", alt: "Service Web" },
-  { src: "/kssda.png", alt: "KSSDA" },
-  { src: "/serviceWeb.png", alt: "Service Web" },
+  { src: "/avseLogo.png", alt: "Avse Logo" },
+  { src: "/pilzEngLight.svg", alt: "Pilz Logo" },
+  { src: "/avseLogo.png", alt: "Avse Logo" },
+  { src: "/pilzEngLight.svg", alt: "Pilz Logo" }, 
+  { src: "/avseLogo.png", alt: "Avse Logo" },
+  { src: "/pilzEngLight.svg", alt: "Pilz Logo" },
 ];
 
 const UserSlider = () => (

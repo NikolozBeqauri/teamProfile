@@ -7,7 +7,7 @@ const OurTeam = () => {
 
     const items = [
         {
-            src: "/userPhoto2.png",
+            src: "/defaultTeamLogo.png",
             alt: "ika",
             title: t("members.1.name"),
             subtitle: t("members.1.role"),
@@ -25,13 +25,13 @@ const OurTeam = () => {
             subtitle: t("members.0.role"),
         },
         {
-            src: "/userPhoto2.png",
+            src: "/defaultTeamLogo.png",
             alt: "guga",
             title: t("members.3.name"),
             subtitle: t("members.3.role"),
         },
         {
-            src: "/userPhoto2.png",
+            src: "/defaultTeamLogo.png",
             alt: "ika",
             title: t("members.1.name"),
             subtitle: t("members.1.role"),
@@ -49,7 +49,7 @@ const OurTeam = () => {
             subtitle: t("members.0.role"),
         },
         {
-            src: "/userPhoto2.png",
+            src: "/defaultTeamLogo.png",
             alt: "guga",
             title: t("members.3.name"),
             subtitle: t("members.3.role"),
