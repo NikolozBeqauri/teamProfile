@@ -16,12 +16,12 @@ const ServiceSection = () => {
     },
     {
       name: t('mobile'),
-      image: '/serviceWeb.png',
+      image: '/serviceMobile.png',
       description: t('mobileDescription'),
     },
     {
       name: t('ui'),
-      image: '/serviceWeb.png',
+      image: '/serviceUIUX.png',
       description: t('uiDescription'),
     },
   ];
