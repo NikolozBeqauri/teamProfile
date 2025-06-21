@@ -3,10 +3,12 @@ import styles from './UserSlider.module.scss'
 const logos = [
   { src: "/avseLogo.png", alt: "Avse Logo" },
   { src: "/pilzEngLight.svg", alt: "Pilz Logo" },
-  { src: "/avseLogo.png", alt: "Avse Logo" },
-  { src: "/pilzEngLight.svg", alt: "Pilz Logo" }, 
+  { src: "/shtab.svg", alt: "shtab Logo" },
+  { src: "/builde.svg", alt: "builde Logo" }, 
   { src: "/avseLogo.png", alt: "Avse Logo" },
   { src: "/pilzEngLight.svg", alt: "Pilz Logo" },
+  { src: "/shtab.svg", alt: "shtab Logo" },
+  { src: "/builde.svg", alt: "builde Logo" }, 
 ];
 
 const UserSlider = () => (

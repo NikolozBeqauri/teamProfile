@@ -31,7 +31,10 @@ const OurCases = () => {
                     </div>
                 </div>
 
-                <h3 className={styles.leptopH3}>{t('cases.0.title')}</h3>
+                <div className={styles.laptopTexts}>
+                    <h3 className={styles.leptopH3}>{t('cases.0.title')}</h3>
+                    <p>{t('cases.0.description')}</p>
+                </div>
 
                 <div className={styles.secondSectionWrapper}>
                     <div className={styles.avseLanding}>
@@ -43,11 +46,14 @@ const OurCases = () => {
                             src={'/avseLanding.png'}
                             alt='avseLanding'
                             height={307}
-                            width={481}
+                            width={381}
                         />
                     </div>
 
-                    <h3 className={styles.leptopH3}>{t('cases.1.title')}</h3>
+                    <div className={styles.laptopTexts}>
+                        <h3 className={styles.leptopH3}>{t('cases.1.title')}</h3>
+                        <p>{t('cases.1.description')}</p>
+                    </div>
 
                     <div className={styles.pilzWrapper}>
                         <div className={styles.secondaryTexts}>
@@ -58,7 +64,7 @@ const OurCases = () => {
                             src={'/pilzLanding.png'}
                             alt='pilzLanding'
                             height={307}
-                            width={481}
+                            width={400}
                             className={styles.pilzLandingImg}
                         />
                         <Image
@@ -69,10 +75,86 @@ const OurCases = () => {
                             width={381}
                         />
                     </div>
-                    <h3 className={styles.leptopH3}>{t('cases.2.title')}</h3>
-
+                    <div className={styles.laptopTexts}>
+                        <h3 className={styles.leptopH3}>{t('cases.2.title')}</h3>
+                        <p>{t('cases.2.description')}</p>
+                    </div>
                 </div>
             </div>
+
+            {/* //////////////////////////////////////////////////////////////////////// */}
+
+            <div className={styles.casesWrapper}>
+                <div className={`${styles.avseApp} ${styles.building}`}>
+                    <Image
+                        src={'/building.png'}
+                        alt='building'
+                        height={440}
+                        width={363}
+                    />
+                    <div className={styles.secondaryTexts}>
+                        <h3>{t('cases.3.title')}</h3>
+                        <p>{t('cases.3.description')}</p>
+                    </div>
+                    <div className={styles.inProgress}>
+                        <p>In Progress</p>
+                    </div>
+                </div>
+
+                <div className={styles.laptopTexts}>
+                    <h3 className={styles.leptopH3}>{t('cases.3.title')}</h3>
+                    <p>{t('cases.3.description')}</p>
+                </div>
+
+                <div className={styles.secondSectionWrapper}>
+                    <div className={`${styles.avseLanding} ${styles.shtab}`}>
+                        <div className={styles.secondaryTexts}>
+                            <h3>{t('cases.4.title')}</h3>
+                            <p>{t('cases.4.description')}</p>
+                        </div>
+                        <Image
+                            src={'/shtab.png'}
+                            alt='shtab'
+                            height={307}
+                            width={381}
+                        />
+                        <div className={styles.inProgress}>
+                            <p>In Progress</p>
+                        </div>
+                    </div>
+
+                    <div className={styles.laptopTexts}>
+                        <h3 className={styles.leptopH3}>{t('cases.4.title')}</h3>
+                        <p>{t('cases.4.description')}</p>
+                    </div>
+
+                    <div className={`${styles.pilzWrapper} ${styles.travel}`}>
+                        <div className={styles.secondaryTexts}>
+                            <h3>{t('cases.5.title')}</h3>
+                            <p>{t('cases.5.description')}</p>
+                        </div>
+                        <Image
+                            src={'/travel.png'}
+                            alt='travel'
+                            height={307}
+                            width={400}
+                            className={styles.pilzLandingImg}
+                        />
+                        <Image
+                            src={'/travel.png'}
+                            alt='travel'
+                            className={styles.pilzLandingLaptopImg}
+                            height={307}
+                            width={381}
+                        />
+                    </div>
+                    <div className={styles.laptopTexts}>
+                        <h3 className={styles.leptopH3}>{t('cases.5.title')}</h3>
+                        <p>{t('cases.5.description')}</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     )
 }
