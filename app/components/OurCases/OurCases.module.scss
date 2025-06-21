@@ -62,7 +62,7 @@
     width: 100%;
     overflow: hidden;
     border-radius: 24px;
-    padding: 0px 12px;
+    padding: 12px;
     gap: 76px;
 
     &::before {
@@ -79,6 +79,16 @@
         z-index: 2;
     }
 }
+.building {
+    background-image: url('/buildingBackground.png');
+
+    &::before {
+        background-color: $primaryYellow;
+        opacity: 0.85;
+    }
+}
+
+
 
 .secondaryTexts h3 {
     font-size: 28px;
@@ -100,6 +110,7 @@
 
 .secondSectionWrapper {
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     gap: 40px;
 }
@@ -141,6 +152,24 @@
     background-image: url('/pilzLandingBackGround.png');
 }
 
+.shtab {
+    background-image: url('/shtabBackground.png');
+
+    &::before {
+        background-color: $primaryPurple;
+        opacity: 0.85;
+    }
+}
+
+.travel {
+    background-image: url('/travelBackground.png');
+
+    &::before {
+        background-color: $lightBlue;
+        opacity: 0.85;
+    }
+}
+
 //animation
 .avseApp,
 .avseLanding,
@@ -178,8 +207,23 @@
 .leptopH3 {
     display: none;
 }
+.laptopTexts {
+    display: none;
+}
 
-@media (max-width: 1300px) {
+
+.inProgress {
+  position: absolute;
+  background: red;
+  transform: rotate(45deg);
+  right: -70;
+  top: 20px;
+  padding: 4px 60px;
+}
+
+
+
+@media (max-width: 1400px) {
 
     .avseLanding,
     .pilzWrapper {
@@ -221,6 +265,11 @@
 
     .avseApp {
         max-width: 300px;
+    }
+
+    .pilzLandingImg, 
+    .avseLanding > img {
+        width: 400px;
     }
 }
 
@@ -264,6 +313,10 @@
 }
 
 @media (max-width: 850px) {
+    .casesWrapper, 
+    .secondSectionWrapper {
+        align-items: center;
+    }
     .texts {
         align-items: center;
     }
@@ -281,9 +334,6 @@
     .texts img {
         display: none;
     }
-}
-
-@media (max-width: 730px) {
     .wrapper {
         align-items: center;
     }
@@ -297,10 +347,15 @@
         padding: 32px;
         max-width: 550px;
     }
+    .avseApp > img {
+        max-width: 381px;
+        width: 100%;
+    }
 
     .avseLanding,
     .pilzWrapper {
         max-width: 550px;
+        width: 100%;
         justify-content: center;
     }
 
@@ -320,6 +375,21 @@
         display: flex;
         width: 100%;
         justify-content: center;
+    }
+    .laptopTexts {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+    .laptopTexts > p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 730px) {
+    .texts h2 {
+        font-size: 28px;
     }
 }
 
