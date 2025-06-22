@@ -18,7 +18,7 @@ const OurCases = () => {
                 <p>{t('description')}</p>
             </div>
             <div className={styles.casesWrapper}>
-                <div className={styles.avseApp}>
+                <a href="https://avse.online/" target="_blank" rel="noopener noreferrer" className={styles.avseApp}>
                     <Image
                         src={'/avseApp.png'}
                         alt='avseApp'
@@ -29,7 +29,7 @@ const OurCases = () => {
                         <h3>{t('cases.0.title')}</h3>
                         <p>{t('cases.0.description')}</p>
                     </div>
-                </div>
+                </a>
 
                 <div className={styles.laptopTexts}>
                     <h3 className={styles.leptopH3}>{t('cases.0.title')}</h3>
@@ -37,7 +37,7 @@ const OurCases = () => {
                 </div>
 
                 <div className={styles.secondSectionWrapper}>
-                    <div className={styles.avseLanding}>
+                    <a href="https://avse.online/" target="_blank" rel="noopener noreferrer" className={styles.avseLanding}>
                         <div className={styles.secondaryTexts}>
                             <h3>{t('cases.1.title')}</h3>
                             <p>{t('cases.1.description')}</p>
@@ -48,14 +48,14 @@ const OurCases = () => {
                             height={307}
                             width={381}
                         />
-                    </div>
+                    </a>
 
                     <div className={styles.laptopTexts}>
                         <h3 className={styles.leptopH3}>{t('cases.1.title')}</h3>
                         <p>{t('cases.1.description')}</p>
                     </div>
 
-                    <div className={styles.pilzWrapper}>
+                    <a href="https://pilz.ge/ka" target="_blank" rel="noopener noreferrer" className={styles.pilzWrapper}>
                         <div className={styles.secondaryTexts}>
                             <h3>{t('cases.2.title')}</h3>
                             <p>{t('cases.2.description')}</p>
@@ -74,7 +74,7 @@ const OurCases = () => {
                             height={307}
                             width={381}
                         />
-                    </div>
+                    </a>
                     <div className={styles.laptopTexts}>
                         <h3 className={styles.leptopH3}>{t('cases.2.title')}</h3>
                         <p>{t('cases.2.description')}</p>
@@ -128,7 +128,7 @@ const OurCases = () => {
                         <p>{t('cases.4.description')}</p>
                     </div>
 
-                    <div className={`${styles.pilzWrapper} ${styles.travel}`}>
+                    <a href="https://nikolozbeqauri.github.io/acceleration-1/" target="_blank" rel="noopener noreferrer" className={`${styles.pilzWrapper} ${styles.travel}`}>
                         <div className={styles.secondaryTexts}>
                             <h3>{t('cases.5.title')}</h3>
                             <p>{t('cases.5.description')}</p>
@@ -147,7 +147,7 @@ const OurCases = () => {
                             height={307}
                             width={381}
                         />
-                    </div>
+                    </a>
                     <div className={styles.laptopTexts}>
                         <h3 className={styles.leptopH3}>{t('cases.5.title')}</h3>
                         <p>{t('cases.5.description')}</p>
